@@ -1,6 +1,6 @@
-import IRubixPanel from "./IRubixPanel"
+import IRubixPanel from "./IRubikPanel"
 
-interface IRubixCube {
+interface IRubikCube {
     front: [[IRubixPanel,IRubixPanel,IRubixPanel], [IRubixPanel,IRubixPanel,IRubixPanel], [IRubixPanel,IRubixPanel,IRubixPanel]]
     right: [[IRubixPanel,IRubixPanel,IRubixPanel], [IRubixPanel,IRubixPanel,IRubixPanel], [IRubixPanel,IRubixPanel,IRubixPanel]]
     top: [[IRubixPanel,IRubixPanel,IRubixPanel], [IRubixPanel,IRubixPanel,IRubixPanel], [IRubixPanel,IRubixPanel,IRubixPanel]]
@@ -9,4 +9,4 @@ interface IRubixCube {
     bottom: [[IRubixPanel,IRubixPanel,IRubixPanel], [IRubixPanel,IRubixPanel,IRubixPanel], [IRubixPanel,IRubixPanel,IRubixPanel]]
 }
 
-export default IRubixCube
+export default IRubikCube

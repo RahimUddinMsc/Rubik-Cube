@@ -1,10 +1,12 @@
-import React from 'react';
 import './App.css';
-import  style from './css/rubiks.module.css';
+import style from './css/rubiks.module.css';
 import DefaultCube from './components/DefaultCube';
 import ExplodedCube from './components/ExplodedCube';
+import useRubikCube from './hooks/useRubikCube';
 
 const App = () => {
+  const rubikCube = useRubikCube();
+
   return <>  
     <div className={style.rubiks_container}>
 
@@ -13,7 +15,7 @@ const App = () => {
       </div>
 
       <div className={style.rubiks_container_cube}>
-        {true ? <DefaultCube/> : <ExplodedCube/>}
+        {true ? <DefaultCube rubikCube={rubikCube}/> : <ExplodedCube rubikCube={rubikCube}/>}
 
 
       </div>

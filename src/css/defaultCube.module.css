@@ -1,0 +1,44 @@
+.default_cube_container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 600px;    
+}
+
+.default_cube_modifier{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.7);
+    top: 20px;    
+}
+
+.default_cube_top{    
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    transform: rotate(30deg) skewX(-30deg) scaleY(0.98) scaleX(1.16);
+    left: 200px;    
+    top:-18px;
+    
+}
+
+.default_cube_front{    
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    transform: skewY(30deg);
+    left: 100px;    
+    top:140px
+}
+
+.default_cube_right{    
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    transform: skewY(-30deg);
+    left: 300px;    
+    top: 140px;
+}
