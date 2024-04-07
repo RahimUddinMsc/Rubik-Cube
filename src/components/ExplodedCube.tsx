@@ -1,6 +1,6 @@
 import IRubikCube from "../interfaces/IRubikCube";
 import style from './../css/explodedCube.module.css';
-import ExplodedCubePanels from "./ExplodedCubePanels";
+import CubePanels from "./CubePanels";
 
 const ExplodedCube = ({rubikCube}: {rubikCube: IRubikCube}) => {
     console.log(rubikCube)
@@ -10,19 +10,19 @@ const ExplodedCube = ({rubikCube}: {rubikCube: IRubikCube}) => {
 
             {/* row 1 */}
             <div></div>
-            <ExplodedCubePanels rubikPanels={rubikCube.top.flat()}/>            
+            <CubePanels rubikPanels={rubikCube.top.flat()}/>            
             <div></div>
             <div></div>
             
             {/* row 2 */}        
-            <ExplodedCubePanels rubikPanels={rubikCube.left.flat()}/>            
-            <ExplodedCubePanels rubikPanels={rubikCube.front.flat()}/>            
-            <ExplodedCubePanels rubikPanels={rubikCube.right.flat()}/>            
-            <ExplodedCubePanels rubikPanels={rubikCube.back.flat()}/>            
+            <CubePanels rubikPanels={rubikCube.left.flat()}/>            
+            <CubePanels rubikPanels={rubikCube.front.flat()}/>            
+            <CubePanels rubikPanels={rubikCube.right.flat()}/>            
+            <CubePanels rubikPanels={rubikCube.back.flat()}/>            
                             
             {/* row 3 */}
             <div></div>
-            <ExplodedCubePanels rubikPanels={rubikCube.bottom.flat()}/>            
+            <CubePanels rubikPanels={rubikCube.bottom.flat()}/>            
             <div></div>
             <div></div>
 

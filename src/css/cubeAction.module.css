@@ -1,0 +1,32 @@
+.action_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+
+.left_action_container{    
+    width: 20%;
+    background: orange;
+}
+
+.middle_action_container{
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    background: pink;
+}
+
+.middle_clockwise_actions{
+    width: 100%;
+}
+
+.middle_anticlockwise_actions{
+    width: 100%;
+}
+
+.right_action_container{
+    width: 20%;
+    background: orange;
+}

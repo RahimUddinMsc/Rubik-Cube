@@ -11,34 +11,34 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    transform: scale(0.7);
-    top: 20px;    
+    transform: scale(0.7) rotateX(25deg);
+    
 }
 
 .default_cube_top{    
     position: absolute;
     height: 200px;
     width: 200px;
-    transform: rotate(30deg) skewX(-30deg) scaleY(0.98) scaleX(1.16);
-    left: 200px;    
-    top:-18px;
+    transform: rotate(30deg) skewX(-30deg) scaleY(1) scaleX(1.14);
+    left: 201px;    
+    top:-19px;
     
 }
 
 .default_cube_front{    
     position: absolute;
-    height: 200px;
+    height: 260px;
     width: 200px;
     transform: skewY(30deg);
-    left: 100px;    
+    left: 101px;    
     top:140px
 }
 
 .default_cube_right{    
     position: absolute;
-    height: 200px;
+    height: 260px;
     width: 200px;
     transform: skewY(-30deg);
     left: 300px;    
-    top: 140px;
+    top: 138px;
 }
