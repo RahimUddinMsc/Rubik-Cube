@@ -4,7 +4,7 @@ import IRubikCube from "../interfaces/IRubikCube";
 import { replaceMultiDimensionArrayVals, rotateMultiDimensionArray } from "../lib/arrayUtils";
 
 const useCubeActions = (action: IMovementProps) => {
-    
+
     const rotateRubikFront = (direction: Direction) => {
         action.setCubeData(rotateFront(action.cubeData, direction))        
     }
@@ -29,8 +29,8 @@ const useCubeActions = (action: IMovementProps) => {
         action.setCubeData(rotateDown(action.cubeData, direction))
     }
 
-    return {rotateRubikFront, rotateRubikRight, rotateRubikUp, rotateRubikBack, rotateRubikLeft, rotateRubikDown}
-
+    return {rotateRubikFront, rotateRubikRight, rotateRubikUp, rotateRubikBack, rotateRubikLeft, rotateRubikDown}    
+    
 }
 
 export const rotateFront = (rubikCube: IRubikCube, direction: Direction) => {    

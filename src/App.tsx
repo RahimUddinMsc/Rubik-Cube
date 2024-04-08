@@ -11,12 +11,25 @@ const App = () => {
 
   return <>  
     <div className={style.rubiks_container}>
+      {rubikCube.startPanel && <>
+        <div className={style.rubiks_container_start_panel}>                        
+            
+            <button className={style.rubiks_start_panel_action} onClick={() => rubikCube.scrambleRubikCube()}>
+              Scrambled
+            </button>                            
+
+            <button className={style.rubiks_start_panel_action} onClick={() => rubikCube.setStartPanel(false)}>
+              Freeplay
+            </button>       
+
+        </div>              
+      </>}
 
       <div className={style.rubiks_container_header}>
           <h2>Rubiks Cube</h2>
-      </div>
-
-      <div className={style.rubiks_container_cube}>
+      </div>    
+    
+      <div className={style.rubiks_container_cube}>              
         {rubikCube.explodedCube ? <ExplodedCube rubikCube={rubikCube.cubeData}/> : <DefaultCube rubikCube={rubikCube.cubeData}/>}
       </div>
 
@@ -32,9 +45,22 @@ const App = () => {
           <CubeMovementActions cubeData={rubikCube.cubeData} setCubeData={rubikCube.setCubeData}/>
 
           <div className={actionStyle.right_action_container}>
-              <button>
-                  Solve
-              </button>
+
+            <button onClick={() => rubikCube.scrambleRubikCube()}>
+              Scamble
+            </button>
+            
+            {/* forcing to scramble first then providing solution as is static */}
+            <button onClick={() => {rubikCube.scrambleRubikCube(); rubikCube.setSolutionDisplayed(!rubikCube.solutionDisplayed)}}>
+              Solve
+            </button>
+
+            {rubikCube.solutionDisplayed && 
+              <div>
+                D, L', B, U', R, F'
+              </div>
+            }
+                    
           </div>
 
         </div>        
