@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1712610670590" clover="3.2.0">
+  <project timestamp="1712610670590" name="All files">
+    <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6" elements="16" coveredelements="16" complexity="0" loc="8" ncloc="8" packages="1" files="1" classes="1"/>
+    <file name="arrayUtils.ts" path="C:\Repos\Projects\rubiks\src\lib\arrayUtils.ts">
+      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="9" count="2" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="18" type="stmt"/>
+      <line num="15" count="3" type="cond" truecount="2" falsecount="0"/>
+    </file>
+  </project>
+</coverage>
