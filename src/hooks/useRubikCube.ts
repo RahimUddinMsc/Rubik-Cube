@@ -1,13 +1,11 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import RubikCube from "../model/RubikCube"
 
 const useRubikCube = () => {
-    const [rubikCube, setRubikCube] = useState(new RubikCube())
+    const [cubeData, setCubeData] = useState(new RubikCube())
+    const [explodedCube, setExplodedCube] = useState(false)
 
-
-
-
-    return rubikCube
+    return {cubeData, setCubeData, explodedCube, setExplodedCube}
 }
 
 export default useRubikCube

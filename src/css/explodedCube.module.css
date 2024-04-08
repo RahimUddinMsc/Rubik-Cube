@@ -1,9 +1,9 @@
 .exploded_cube_container{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 140px);
     grid-template-rows: repeat(3, 1fr);
     background: rgb(255, 255, 255);
-    height: 400px;
+    height: 420px;
     width: 600px;    
-    place-items: center;    
+    place-content: center;    
 }

@@ -19,10 +19,9 @@
     position: absolute;
     height: 200px;
     width: 200px;
-    transform: rotate(30deg) skewX(-30deg) scaleY(1) scaleX(1.14);
-    left: 201px;    
-    top:-19px;
-    
+    transform: rotate(-150deg) skewX(-30deg) scaleY(1) scaleX(1.14);
+    left: 202px;    
+    top:-19px;        
 }
 
 .default_cube_front{    
@@ -34,11 +33,11 @@
     top:140px
 }
 
-.default_cube_right{    
+.default_cube_right{        
     position: absolute;
-    height: 260px;
-    width: 200px;
-    transform: skewY(-30deg);
-    left: 300px;    
-    top: 138px;
+    height: 200px;
+    width: 260px;
+    transform: skewY(-30deg) rotate(-90deg);
+    left: 272px;
+    top: 168px;
 }
