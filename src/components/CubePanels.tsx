@@ -5,7 +5,7 @@ const CubePanels = ({rubikPanels, className}: {rubikPanels: IRubikPanel[], class
     return <>    
         <div className={`${rubikStyle.rubiks_cube_panel} ${className}`}>                            
             {rubikPanels.map((panel,index) => {                    
-                return <div key={`${panel.display}-${index}`} className={`${rubikStyle.rubiks_cube_panel_item} ${rubikStyle[`rubiks_panel_${panel.display}`]}`} data-panel-color={panel.value}>{panel.value}</div>
+                return <div key={`${panel.display}-${index}`} className={`${rubikStyle.rubiks_cube_panel_item} ${rubikStyle[`rubiks_panel_${panel.display}`]}`} data-panel-color={panel.value}></div>
             })}
         </div>     
     </>
