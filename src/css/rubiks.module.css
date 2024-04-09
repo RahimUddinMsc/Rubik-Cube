@@ -38,6 +38,11 @@
     background: #00000082;
 }
 
+.rubiks_start_panel_solved{
+    color: white;
+    font-weight: bold;
+}
+
 .rubiks_start_panel_action{
     height: 40px;
     width: 200px;

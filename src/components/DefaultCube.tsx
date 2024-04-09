@@ -4,7 +4,7 @@ import CubePanels from "./CubePanels";
 
 const DefaultCube = ({rubikCube}: {rubikCube: IRubikCube}) => {
     return <>    
-        <div className={style.default_cube_container}>
+        <div id="default_cube_container" className={style.default_cube_container}>
             <div className={style.default_cube_modifier}>
                 <div className={style.default_cube_top}>
                     <CubePanels rubikPanels={rubikCube.top.flat()}/>            

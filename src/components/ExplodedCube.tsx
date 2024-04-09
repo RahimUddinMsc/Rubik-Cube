@@ -5,7 +5,7 @@ import CubePanels from "./CubePanels";
 const ExplodedCube = ({rubikCube}: {rubikCube: IRubikCube}) => {    
 
     return <>
-        <div className={explodedStyle.exploded_cube_container}>
+        <div id="exploded_cube_container" className={explodedStyle.exploded_cube_container}>
 
             {/* row 1 */}
             <div></div>

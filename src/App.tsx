@@ -13,14 +13,20 @@ const App = () => {
     <div className={style.rubiks_container}>
       {rubikCube.startPanel && <>
         <div className={style.rubiks_container_start_panel}>                        
-            
-            <button className={style.rubiks_start_panel_action} onClick={() => rubikCube.scrambleRubikCube()}>
-              Scrambled
-            </button>                            
+                    
+          <button className={style.rubiks_start_panel_action} onClick={() => rubikCube.scrambleRubikCube()}>
+            Scramble
+          </button>                            
 
-            <button className={style.rubiks_start_panel_action} onClick={() => rubikCube.setStartPanel(false)}>
-              Freeplay
-            </button>       
+          {rubikCube.rubikSolved && <>
+            <div id="rubik_solved_header" className={style.rubiks_start_panel_solved}>
+              Solved - Play Again?
+            </div>          
+          </>}
+
+          <button className={style.rubiks_start_panel_action} onClick={() => rubikCube.setStartPanel(false)}>
+            Freeplay
+          </button>       
 
         </div>              
       </>}
@@ -29,7 +35,7 @@ const App = () => {
           <h2>Rubiks Cube</h2>
       </div>    
     
-      <div className={style.rubiks_container_cube}>              
+      <div id="rubiks_container_cube" className={style.rubiks_container_cube}>              
         {rubikCube.explodedCube ? <ExplodedCube rubikCube={rubikCube.cubeData}/> : <DefaultCube rubikCube={rubikCube.cubeData}/>}
       </div>
 
@@ -37,8 +43,8 @@ const App = () => {
         <div className={actionStyle.action_container}>
 
           <div className={actionStyle.left_action_container}>
-              <button onClick={() => rubikCube.setExplodedCube(!rubikCube.explodedCube)}>
-                  Explode
+              <button id="rubiks_view_toggle" onClick={() => rubikCube.setExplodedCube(!rubikCube.explodedCube)}>
+                  {rubikCube.explodedCube ? <>Contract</> : <>Explode</>}
               </button>
           </div>
 

@@ -1,4 +1,4 @@
-import {useState } from "react"
+import {useEffect, useState } from "react"
 import RubikCube from "../model/RubikCube"
 import IRubikCube from "../interfaces/IRubikCube";
 import Direction from "../constants/movementDirection";
@@ -10,6 +10,7 @@ const useRubikCube = () => {
     const [startPanel, setStartPanel] = useState(true);
     const [solutionDisplayed, setSolutionDisplayed] = useState(false);
     const [scrambled, setScrambled] = useState(false);
+    const [rubikSolved, setRubikSolved] = useState(false);
         
     //creates an array of functions to be called when scrambling
     const rubikScrambler = [
@@ -34,12 +35,20 @@ const useRubikCube = () => {
         setStartPanel(false)
     }
 
+    useEffect(() => {
+        if(!startPanel && (JSON.stringify(new RubikCube()) == JSON.stringify(cubeData))){            
+            setRubikSolved(true)
+            setStartPanel(true)
+        }
+    },[cubeData]) 
+
     return {
         cubeData, setCubeData, 
         explodedCube, setExplodedCube, 
         startPanel, setStartPanel, 
         solutionDisplayed, setSolutionDisplayed,
-        scrambled, scrambleRubikCube
+        scrambled, scrambleRubikCube,
+        rubikSolved
     }
 }
 
