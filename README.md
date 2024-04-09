@@ -22,11 +22,13 @@ You will also see any lint errors in the console.
 
 ### `npm run test_jest`
 
-Launches the test runner with code coverage this can be viewed in the console or the coverage reports themselves can be found in the following directory src/tests/jest/coverage
+Launches the test runner with code coverage this can be viewed in the console or the coverage reports themselves can be found in the following directory src/tests/jest/coverage.
 
 
 ### `npm run test_playwright`
 
-IMPORTANT: The app must be running locally for the automated tests to work (npm start) and the (npm run test_playwright) command run by opening and executing in a new terminal
-Launches the test runner with results in the console or the report themselves can be found in the following directory src/tests/playwright/report
-you can execute 'npx playwright test --ui' if would like to run the tests with a ui
+IMPORTANT: The app must be running locally for the automated tests to work (npm start) and the (npm run test_playwright) command run by opening and executing in a new terminal.
+
+Launches the test runner with results in the console or the report themselves can be found in the following directory src/tests/playwright/report.
+
+You can execute 'npx playwright test --ui' if would like to run the tests with a ui
