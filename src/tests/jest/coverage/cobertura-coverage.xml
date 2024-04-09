@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="8" lines-covered="8" line-rate="1" branches-valid="2" branches-covered="2" branch-rate="1" timestamp="1712660727302" complexity="0" version="0.1">
+<coverage lines-valid="8" lines-covered="8" line-rate="1" branches-valid="2" branches-covered="2" branch-rate="1" timestamp="1712671735387" complexity="0" version="0.1">
   <sources>
     <source>C:\Repos\Projects\rubiks</source>
   </sources>
