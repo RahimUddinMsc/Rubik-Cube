@@ -2,7 +2,7 @@
 
 ## Prequisites
 
-Visual Studio
+Visual Studio,
 Node
 
 ## Available Scripts (Through visual studio terminal)
