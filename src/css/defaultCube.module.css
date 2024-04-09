@@ -18,7 +18,7 @@
     position: absolute;
     height: 200px;
     width: 200px;
-    transform: rotate(-150deg) skewX(-30deg) scaleY(1) scaleX(1.14);
+    transform: rotate(30deg) skewX(-30deg) scaleY(1) scaleX(1.14);
     left: 202px;    
     top:-19px;        
 }
@@ -34,9 +34,9 @@
 
 .default_cube_right{        
     position: absolute;
-    height: 200px;
-    width: 260px;
-    transform: skewY(-30deg) rotate(-90deg);
-    left: 272px;
-    top: 168px;
+    height: 260px;
+    width: 200px;
+    transform: skewY(-30deg) rotate(0deg);
+    left: 302px;
+    top: 138px;
 }

@@ -36,7 +36,7 @@ const useRubikCube = () => {
     }
 
     useEffect(() => {
-        if(!startPanel && (JSON.stringify(new RubikCube()) == JSON.stringify(cubeData))){            
+        if(!startPanel && (JSON.stringify(new RubikCube()) === JSON.stringify(cubeData))){            
             setRubikSolved(true)
             setStartPanel(true)
         }

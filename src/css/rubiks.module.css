@@ -90,11 +90,11 @@
 }
 
 .rubiks_panel_green{
-    background: rgb(102, 236, 102);
+    background: rgb(142, 255, 142);
 }
 
 .rubiks_panel_red{
-    background: rgb(252, 70, 70);
+    background: rgb(255, 104, 104);
 }
 
 .rubiks_panel_yellow{
@@ -106,5 +106,5 @@
 }
 
 .rubiks_panel_blue{
-    background: rgb(127, 140, 245);
+    background: rgb(120, 165, 255);
 }
