@@ -1,4 +1,4 @@
-# Rubik Cubik App Created With React & Typescript using Jest for Unit tests and PLaywright for automated tests
+# Rubik Cubik App Created With React & Typescript using Jest for unit tests and Playwright for automated tests
 
 ## Prequisites
 
