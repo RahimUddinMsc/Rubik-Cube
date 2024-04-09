@@ -3,18 +3,22 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 1600px;
-    height: 900px;
+    width: 1200px;
+    height: 700px;
     background: white;
     border-radius: 10px;
     box-shadow: 0px 0px 7px 1px #bdbdbd;    
+    overflow: hidden;    
 }
 
 .rubiks_container_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 160px;
     width: 100%;
-    background: red;
-    text-align: center;
+    background: rgb(248, 248, 248);
+    color: rgb(100, 116, 139);    
 }
 
 .rubiks_container_cube{
@@ -22,9 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 800px;    
-    height: 800px;    
-    background: rgb(0, 156, 83);
+    height: 800px;        
 }
 
 .rubiks_container_start_panel{
@@ -35,7 +37,7 @@
     height: 100%;
     width: 100%;
     z-index: 1;
-    background: #00000082;
+    background: #000000bd;
 }
 
 .rubiks_start_panel_solved{
@@ -64,8 +66,8 @@
     display: flex;
     justify-content: center;
     height: 160px;
-    width: 100%;
-    background: blue;
+    width: 100%;    
+    background: rgb(248, 248, 248);        
 }
 
 .rubiks_cube_panel{
@@ -77,7 +79,7 @@
 }
 
 .rubiks_cube_panel_item{
-    border: 1px solid black;    
+    border: 1px solid  rgb(75, 88, 106);        
     height: 33.3%; 
     width: 33.3%;    
     border-radius: none;
@@ -88,21 +90,21 @@
 }
 
 .rubiks_panel_green{
-    background: green;
+    background: rgb(102, 236, 102);
 }
 
 .rubiks_panel_red{
-    background: red;
+    background: rgb(252, 70, 70);
 }
 
 .rubiks_panel_yellow{
-    background: yellow;
+    background: rgb(255, 255, 123);
 }
 
 .rubiks_panel_orange{
-    background: orange;
+    background: rgb(255, 207, 117);
 }
 
 .rubiks_panel_blue{
-    background: rgb(134, 134, 255);
+    background: rgb(127, 140, 245);
 }

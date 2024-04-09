@@ -10,7 +10,7 @@ const useRubikCube = () => {
     const [startPanel, setStartPanel] = useState(true);
     const [solutionDisplayed, setSolutionDisplayed] = useState(false);
     const [scrambled, setScrambled] = useState(false);
-    const [rubikSolved, setRubikSolved] = useState(false);
+    const [rubikSolved, setRubikSolved] = useState(false);    
         
     //creates an array of functions to be called when scrambling
     const rubikScrambler = [
@@ -23,8 +23,8 @@ const useRubikCube = () => {
     ]
 
     //scramble the rubik cube and update UI states to start the game
-    const scrambleRubikCube = () => {
-        let updatedRubikCube = cubeData;
+    const scrambleRubikCube = () => {    
+        let updatedRubikCube = new RubikCube();
 
         rubikScrambler.forEach(action => {
             updatedRubikCube = action(updatedRubikCube)

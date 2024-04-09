@@ -6,17 +6,30 @@
     height: 100%;
 }
 
+.action_container_btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgb(221, 231, 245);
+    border-color: rgb(211, 224, 233);    
+    color: rgb(100, 116, 139);        
+    border-radius: 50px;    
+    height: 60px;
+    width: 90px;
+}
+
 .left_action_container{    
-    width: 20%;
-    background: orange;
+    display: flex;
+    justify-content:space-between;
+    width: 28%;    
 }
 
 .middle_action_container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 45%;
-    background: pink;
+    width: 45%;    
 }
 
 .middle_clockwise_actions{
@@ -32,15 +45,33 @@
 }
 
 .right_action_container{
-    width: 20%;
-    background: orange;
+    display: flex;
+    position: relative;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 28%;    
+}
+
+.action_container_solution{
+    position: absolute;
+    text-align: center;    
+    top:-90px;
+    left: -20px;
+    width: 220px;
+    background:  rgb(221, 231, 245);
+    border-radius: 10px;
+    padding: 8px 20px;    
 }
 
 .movement_action_btn {
-    height: 32px;
-    width: 32px;
+    height: 34px;
+    width: 34px;
     border-radius: 8px;    
     text-align: center;
     margin: 4px;
     font-weight: bold;
+    background: rgb(221, 231, 245);
+    border-color: rgb(211, 224, 233);    
+    color: rgb(100, 116, 139)
 }

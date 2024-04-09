@@ -8,11 +8,10 @@
 }
 
 .default_cube_modifier{
-    position: absolute;
+    position: absolute;    
     height: 100%;
     width: 100%;
-    transform: scale(0.7) rotateX(25deg);
-    
+    transform: scale(0.7) rotateX(25deg);    
 }
 
 .default_cube_top{    
