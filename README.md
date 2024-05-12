@@ -1,4 +1,4 @@
-# Rubik Cubik App Created With React & Typescript using Jest for unit tests and Playwright for automated tests
+# Rubik's Cube App Created With React & Typescript, Jest utilised for unit tests, Playwright utilised for automated tests
 
 ## Prequisites
 
@@ -17,18 +17,14 @@ Important: Run 'npm install' on first initial load of the app
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
 ### `npm run test_jest`
 
-Launches the test runner with code coverage this can be viewed in the console or the coverage reports themselves can be found in the following directory src/tests/jest/coverage.
-
+Launches the test runner the results of which are present in the console. Additional config setup to create coverage reports this can be found in the following directory src/tests/jest/coverage after running the test.
 
 ### `npm run test_playwright`
 
-IMPORTANT: The app must be running locally for the automated tests to work (npm start) and the (npm run test_playwright) command run by opening and executing in a new terminal.
+IMPORTANT: The app must be running locally for the automated tests to work (npm start) and the (npm run test_playwright) command to be run after in a new terminal.
 
-Launches the test runner with results in the console or the report themselves can be found in the following directory src/tests/playwright/report.
+Launches the test runner the results of which are present in the console. Alternatively additional cofig setup to provide a html report. This can be found in the following directory src/tests/playwright/report after running the test.
 
-You can execute 'npx playwright test --ui' if would like to run the tests with a ui
+You can execute 'npx playwright test --ui' if would like to run the tests with a ui.
