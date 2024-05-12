@@ -14,15 +14,6 @@
     transform: scale(0.7) rotateX(25deg);    
 }
 
-.default_cube_top{    
-    position: absolute;
-    height: 200px;
-    width: 200px;
-    transform: rotate(30deg) skewX(-30deg) scaleY(1) scaleX(1.14);
-    left: 202px;    
-    top:-19px;        
-}
-
 .default_cube_front{    
     position: absolute;
     height: 260px;
@@ -39,4 +30,30 @@
     transform: skewY(-30deg) rotate(0deg);
     left: 302px;
     top: 138px;
+}
+
+.default_cube_top{    
+    position: absolute;
+    height: 200px;
+    width: 200px;    
+    left: 201px;
+    top: -19px;    
+}
+
+.default_cube_top_rotated_right{        
+    transform: rotate(30deg) skewX(-30deg) scaleY(1) scaleX(1.14);
+    left: 202px;    
+    top:-19px;        
+}
+
+.default_cube_top_rotated_left{            
+    transform: rotate(30deg) rotateZ(90deg) skewY(30deg) scaleY(1.15);    
+}
+
+.default_cube_top_rotated_top{                
+    transform: rotate(180deg) rotateZ(60deg) skewY(-30deg) scaleY(1.16);
+}
+
+.default_cube_top_rotated_back{                
+    transform: rotate(-60deg) skewY(30deg) scaleY(1.16);    
 }
