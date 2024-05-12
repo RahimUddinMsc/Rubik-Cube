@@ -21,7 +21,7 @@ const useDefaultCubeView = (rubikCube: IRubikCube) => {
     }
 
     const rubikViewMap = new Map([
-        [0, {front: rubikCube.front, right: flipped ? rubikCube.left : rubikCube.right , topViewRotation: 'default_cube_top_rotated_right'}],
+        [0, {front: rubikCube.front, right: flipped ? rubikCube.left : rubikCube.right, topViewRotation: 'default_cube_top_rotated_right'}],
         [1, {front: flipped ? rubikCube.left : rubikCube.right, right: rubikCube.back, topViewRotation: 'default_cube_top_rotated_left'}],
         [2, {front: rubikCube.back, right: flipped ? rubikCube.right : rubikCube.left, topViewRotation: 'default_cube_top_rotated_top'}],
         [3, {front: flipped ? rubikCube.right : rubikCube.left, right: rubikCube.front, topViewRotation: 'default_cube_top_rotated_back'}]

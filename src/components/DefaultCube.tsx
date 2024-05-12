@@ -4,13 +4,19 @@ import IRubikCube from "../interfaces/IRubikCube";
 import style from './../css/defaultCube.module.css';
 import CubePanels from "./CubePanels";
 import './../css/defaultCube.module.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleRight, faCircleLeft, faCircleUp } from '@fortawesome/free-solid-svg-icons'
+
+
 
 const DefaultCube = ({rubikCube}: {rubikCube: IRubikCube}) => {
     const rubikHandler = useDefaultCubeView(rubikCube);
     const rubikViewHandler = rubikHandler.view();
 
     return <>    
-        <button onClick={() => rubikHandler.rotateCube(Direction.ANTICLOCKWISE)}>left</button>
+        <button className={style.default_cube_action_btn} onClick={() => rubikHandler.rotateCube(Direction.ANTICLOCKWISE)}>
+            <FontAwesomeIcon icon={faCircleLeft} size='2x' />
+        </button>
 
         <div id="default_cube_container" className={style.default_cube_container}>
             <div className={style.default_cube_modifier}>
@@ -26,10 +32,15 @@ const DefaultCube = ({rubikCube}: {rubikCube: IRubikCube}) => {
                     <CubePanels rubikPanels={rubikHandler.flipped ? rubikViewHandler!.right.flat().reverse() : rubikViewHandler!.right.flat()}/>            
                 </div>            
             </div>            
-        </div>        
+        </div>            
+              
+        <button className={style.default_cube_action_btn} onClick={() => rubikHandler.rotateCube(Direction.CLOCKWISE)}>
+            <FontAwesomeIcon icon={faCircleRight} size='2x' />
+        </button>
 
-        <button onClick={() => rubikHandler.rotateCube(Direction.CLOCKWISE)}>right</button>
-        <button onClick={() => rubikHandler.setFlipped(!rubikHandler.flipped)}>flips</button>
+        <button className={`${style.default_cube_action_btn} ${style.cube_action_flip_btn}`} onClick={() => rubikHandler.setFlipped(!rubikHandler.flipped)}>
+            <FontAwesomeIcon icon={faCircleUp} size='2x' />
+        </button>
     </>
 }
 

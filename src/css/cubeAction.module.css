@@ -13,7 +13,7 @@
     justify-content: space-evenly;
     background: rgb(255 255 255);
     border-color: rgb(211, 224, 233);    
-    color: rgb(100, 116, 139);        
+    color: rgb(24, 80, 203) ;
     border-radius: 10px;    
     height: 60px;
     width: 90px;
@@ -67,7 +67,7 @@
     left: -20px;
     width: 220px;
     background:  rgb(221, 231, 245);
-    color: rgb(100, 116, 139);;
+    color: rgb(24, 80, 203) ;
     border-radius: 10px;
     padding: 8px 20px;    
 }
@@ -81,7 +81,7 @@
     font-weight: bold;
     background: rgb(255 255 255);
     border-color: rgb(211, 224, 233);    
-    color: rgb(100, 116, 139);
+    color: rgb(24, 80, 203) ;
     transition: 0.25s ease-in;
     cursor: pointer;    
 }
